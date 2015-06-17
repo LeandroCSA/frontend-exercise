@@ -69,3 +69,64 @@ var enquete = {
 	}
 };
 
+$(document).ready(onReady);
+
+function onReady(){
+	//Clicar para carregar demais itens
+	size_li = $("#myList li").size();
+    x=5;
+    $('#myList li:lt('+x+')').show();
+    
+	$('.carregamais').click(function () {
+        x= (x+5 <= size_li) ? x+5 : size_li;
+        $('#myList li:lt('+x+')').fadeIn("fast");
+		
+		if(x == size_li){
+            $('.carregamais').hide();
+        }
+		
+		return false;
+    });
+	
+	// Clica para substituir a imagem Maior, via thumbnail
+	$('.galeriaThumb').on('click', function (){
+		var IDnt = $(this).attr('data-color');
+		var linK = "images/pilates-"+IDnt+"-big.jpg";
+		
+		$('.image-bigger').fadeOut().attr('src', linK).fadeIn();
+		
+		return false;
+	});
+	
+	// Clicar para enviar o voto na enquete
+	$('.enviarBtn').on('click', function (){ 
+		var value = $("input:radio[name=exampleRadios]:checked").val();
+		
+		if($("input:radio[name=exampleRadios]").is(':checked')){
+			
+			// Apresenta a Validação
+			validacao('Você votou em: <strong>"'+ value +'"</strong>', "#E6FBF8", 0);
+			
+			$('label').fadeOut();
+			$('.barra-voto').fadeIn(150);
+			$(this).fadeOut(150);
+			window.setTimeout(function() {				
+				$("#sim").delay(320).animate({width: "85%"});
+				$("#nao").delay(350).animate({width: "15%"});
+			}, 500);			
+				
+		}else{
+			validacao('Escolha uma opção', "#FBE9E6", 1500);
+		}
+		return false;
+	});
+		
+	// Apresenta a validação
+	function validacao(t, c, tm){
+		if(tm==0){
+			$('#escolha').fadeIn().css({"background":c,"display":"block"}).html(t);
+		}else{
+			$('#escolha').fadeIn().css({"background":c,"display":"block"}).html(t).delay(tm).fadeOut();
+		}
+	}
+}
