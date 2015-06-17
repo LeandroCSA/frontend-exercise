@@ -12,10 +12,404 @@
   <![endif]-->
   <!-- você pode adicionar os arquivos do boostrap, se quiser -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/glamtest.css">
 </head>
 
 <body>
+<div class="container">
+    
+    <h1>CURVES</h1>
+    
+    <div class="row textos">
+        <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6">
+            <img src="images/pilates-1-big.jpg" class="img-responsive image-bigger">
 
+            <ul class="gallery-test">
+            	<li>
+                	<a href="#" class="galeriaThumb" target="_self" data-color="1">
+                    	<img src="images/thumbs/pilates-1-thumb.jpg" class="img-responsive">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="galeriaThumb" target="_self" data-color="2">
+                        <img src="images/thumbs/pilates-2-thumb.jpg" class="img-responsive">
+                    </a>
+                </li>
+                <li>
+                	<a href="#" class="galeriaThumb" target="_self" data-color="3">
+                    	<img src="images/thumbs/pilates-3-thumb.jpg" class="img-responsive">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="galeriaThumb" target="_self" data-color="4">
+                        <img src="images/thumbs/pilates-4-thumb.jpg" class="img-responsive">
+                    </a>
+                </li>
+                <li>
+                	<a href="#" class="galeriaThumb" target="_self" data-color="5">
+                    	<img src="images/thumbs/pilates-5-thumb.jpg" class="img-responsive">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="galeriaThumb" target="_self" data-color="6">
+                        <img src="images/thumbs/pilates-6-thumb.jpg" class="img-responsive">
+                    </a>
+                </li>
+            </ul>
+            
+            <p>Pioneira entre as academias full service no Brasil, a Runner foi fundada em 1983. A primeira unidade Runner, localizada no Jardim Europa, na Rua Professor Artur Ramos, fez sucesso logo no início de suas atividades, devido à estrutura inovadora e a variedade de serviços oferecidos. Em poucos meses de atividades, a academia já contava com um número expressivo de alunos. Foi quando a Runner sentiu a necessidade de crescer e inaugurou a segunda unidade, no ano de 1986, localizada em Moema.  O crescimento não parou por aí e, em 2007, a Runner tomou uma importante decisão em sua história: firmar o contrato de licença e uso de marca e abrir unidades licenciadas por todo o Brasil. Ao adotar o modelo de licenciamento de marca, a Runner conseguiu expandir sua atuação e hoje é uma rede de 19 academias em constante crescimento.</p>
+            
+            <span class="titleh2">LOCAL</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mi venenatis, ultrices libero eu, consequat arcu. Proin aliquam sapien ante, varius tempor nunc posuere eu. Praesent tristique odio egestas tincidunt consequat. In imperdiet euismod nisi commodo consectetur.</p>
+            
+            <span class="titleh2">VALIDADE</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a mi venenatis, ultrices libero eu, consequat arcu. Proin aliquam sapien ante, varius tempor nunc posuere eu. Praesent tristique odio egestas tincidunt consequat. In imperdiet euismod nisi commodo consectetur.</p>
+        </div>
+        
+        <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6 item">
+            <h1>PILATES</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delnit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iss qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>            
+            <h2><strong>30%OFF</strong></h2>
+            <p class="preco">
+            	De R$ 354,00 por apenas <strong>R$ 175,00</strong><br>
+            	<span class="econ">ECONOMIZE R$ 179,00</span>
+            	<br>
+            	<br>
+            	<span class="glamgirls"><b>15 GLAMGIRLS</b> JÁ TROCARAM</span>
+            </p>
+            <a href="/ProductReview/Novo/1515" class="btn btn-primary quero">
+            	EU QUERO AGORA!
+            </a>
+            
+            <div class="enquete">
+            	<span class="titleh2">ENQUETE</span>
+                <p>
+                	Glamgirl, conte para a Glambox sobre a sua experiência.<br>
+                    Diga o que você achou deste serviço:
+                    <span id="escolha"></span>
+                </p>
+				
+                <label for="radio-one">
+                    <input type="radio" name="exampleRadios" id="radio-one" value="gostei"/>
+                    <i></i> <span>Gostei</span>
+                </label>                
+                <label for="radio-two">
+                    <input type="radio" name="exampleRadios" id="radio-two" value="nao gostei"/>
+                    <i></i> <span>Não Gostei</span>
+                </label>
+                
+				<div class="barra-voto">
+                	<span id="sim" class="posicao"></span>
+                    <span class="texto">85% Gostou</span>
+                </div>
+                <div class="barra-voto">
+                	<span id="nao" class="posicao"></span>
+                    <span class="texto">15% Não Gostou</span>
+                </div>
+                <a href="/ProductReview/Novo/1515" class="btn btn-primary enviarBtn">
+                	ENVIAR
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="row">
+        <div class="col-md-12 tituloferta">
+        	<h2>OUTRAS OFERTAS</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12"> 
+        	<ul id="myList" class="ofertas">
+            	<li>
+                	<a href="#" target="_self">
+                        <img src="images/bio-ritmo-thumb.jpg" class="img-responsive">
+                        <h3>BIO RITMO</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/runner-thumb.jpg" class="img-responsive">
+                        <h3>RUNNER</h3>
+                        <span>30% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/yoga-thumb.jpg" class="img-responsive">
+                        <h3>YOGA</h3>
+                        <span>10% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Rio de Janeiro - RJ</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-1-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-2-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>50% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/bio-ritmo-thumb.jpg" class="img-responsive">
+                        <h3>BIO RITMO</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/runner-thumb.jpg" class="img-responsive">
+                        <h3>RUNNER</h3>
+                        <span>30% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/yoga-thumb.jpg" class="img-responsive">
+                        <h3>YOGA</h3>
+                        <span>10% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Rio de Janeiro - RJ</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-1-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-2-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>50% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/bio-ritmo-thumb.jpg" class="img-responsive">
+                        <h3>BIO RITMO</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/runner-thumb.jpg" class="img-responsive">
+                        <h3>RUNNER</h3>
+                        <span>30% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/yoga-thumb.jpg" class="img-responsive">
+                        <h3>YOGA</h3>
+                        <span>10% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Rio de Janeiro - RJ</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-1-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-2-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>50% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/bio-ritmo-thumb.jpg" class="img-responsive">
+                        <h3>BIO RITMO</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/runner-thumb.jpg" class="img-responsive">
+                        <h3>RUNNER</h3>
+                        <span>30% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/yoga-thumb.jpg" class="img-responsive">
+                        <h3>YOGA</h3>
+                        <span>10% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Rio de Janeiro - RJ</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-1-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-2-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>50% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/bio-ritmo-thumb.jpg" class="img-responsive">
+                        <h3>BIO RITMO</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/runner-thumb.jpg" class="img-responsive">
+                        <h3>RUNNER</h3>
+                        <span>30% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: São Paulo - SP</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/yoga-thumb.jpg" class="img-responsive">
+                        <h3>YOGA</h3>
+                        <span>10% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Rio de Janeiro - RJ</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-1-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>70% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+                <li>
+                	<a href="#" target="_self">
+                        <img src="images/onodera-2-thumb.jpg" class="img-responsive">
+                        <h3>ONODERA</h3>
+                        <span>50% de Desconto</span>
+                        <em>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed...<br><br>
+                            <span>Local: Curitiba - PR</span>
+                        </em>
+                    </a>
+                </li>
+            </ul>
+            <a href="/ProductReview/Novo/1515" class="btn btn-primary carregamais">
+            	CARREGAR MAIS OFERTAS
+            </a>
+        </div>
+    </div>
+    
+</div>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="js/aux-fn.js"></script>
 </body>
